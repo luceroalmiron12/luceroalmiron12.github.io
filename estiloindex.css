@@ -1,0 +1,129 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.modificador{
+    width: 100%;
+    margin: 0 auto;
+}
+.flex {
+    display: flex; /*cajas ordenadas*/
+    flex-wrap: wrap; /* patea las cajas */
+}
+/**************************************************************/
+/***********************ENCABEZADO****************************/
+.cabeza{
+    width: 100%;
+    background: rgb(229, 221, 199);
+    margin-bottom: 5px ;
+    text-transform: uppercase;/* pone el texto en mayuscula*/
+    padding-bottom: 0px;
+    background-position: 0%;
+    background-size: 100%;
+    text-align: center;
+   
+    margin:  auto;
+
+}
+
+.cabeza h2{
+    margin:  auto; /* para qeu el encabezado este en el centro*/
+}
+.contenido{
+    width: 100%;
+    height: 400px;
+    color: rgba(42, 41, 40, 0.772);
+    margin-bottom: 10px;
+    /*display: flex;
+    flex-direction: column;para que lo vote pa abajo siempre 
+    min-height: 140vh;/*evita que el piede de pagina se sobreponga, lo va mandar pa abajo*/
+
+
+}
+/************PIE DE PAGINA**************/
+.pie{
+    background-color: rgb(229, 221, 199);
+    padding: 3px;
+    text-align: center;
+    margin-top: 5px;
+}
+.pie h2{
+    text-align: center;
+    color:#caa265;
+    
+}
+
+
+.noticias {
+    width: 100%;
+    background: rgb(232, 231, 220);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.novedades{
+    width: 100%;
+    background: rgb(232, 231, 220);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/********MENU PRINCIPAL************/
+
+
+/*************RESPONCIP**************/
+
+@media screen and  (min-width: 1024px){
+    .modificador{
+        width: 1000px; 
+    }
+
+    .noticias{
+        width: 70%;
+        margin-right: 10px;
+
+    }
+
+    .novedades{
+        width: 29%;
+    }
+    
+
+}
+
+/**********MENU NOVEDADES*************/
+
+
+.menunovedades ul{
+    padding: 5px;
+}
+.menunovedades ul li{
+    display: block; /* lo acomoda y pone en bloques en forma horizontal*/
+    line-height: 60px;/* tamaño del interlineado*/
+}
+
+.menunovedades ul li a{
+   color: rgb(0, 0, 0);  /*color de letra */
+   font-size: 20px;/* tamaño de etra*/
+   padding:13px;/* aplicando una medida a los dos lados arriba y ancho*/
+   border-radius: 100px;/* obalado al cuadrado*/
+   text-transform: uppercase;/* pone el texto en mayuscula*/
+   text-decoration: none; /*para desaparese la linea*/
+  
+}
+
+.menunovedades li.active,.menunovedades li:hover{
+background-color:  rgb(247, 240, 217) ;
+transform:.5s;
+color: rgb(249, 234, 183) ;
+}
+.img{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+

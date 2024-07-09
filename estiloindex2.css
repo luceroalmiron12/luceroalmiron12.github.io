@@ -1,0 +1,86 @@
+.menu{
+    background:rgb(238, 227, 193);
+    height: 80px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.menu ul{
+    float: right;
+    margin-right: 20px;
+}
+.menu ul li{
+    display: inline-block;
+    line-height: 80px; /*letra en el centro*/
+    margin: 0 5px;
+}
+.menu ul li a{
+    color: rgb(55, 55, 51);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+/*hover para que cuando pase el mause cambie de color */
+.menu li a.active, .menu li a:hover{
+    background: #e4dcaa;
+    transition: .5s;
+}
+.checkbtn{/*estilo del icono responsive*/
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer; /*para que aparesca la manito en vez de la flecha */
+    display: none;
+}
+#check{
+    display: none;
+}
+@media screen and (min-width: 1024px) {
+    .modificador{
+        width: 1000px;
+}
+
+}
+/*variacion de acuerdo al tamaño de pantallas*/
+@media (max-width: 952px){
+    
+    .menu ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 700px){
+    .checkbtn{
+        display: block;
+    }
+   .menu ul{
+        position: fixed;/*pociciones manipulables */
+        width: 80%;
+        height: 50vh;/*para el cuadro del menu */
+        background:#f1efd5;
+        top: 80px;
+        left: -100%;/*forzando y lo saca del cuadro */
+        text-align: center;
+        transition: all .5s;
+    }
+    .menu ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    .menu nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+

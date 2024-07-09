@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estiloindex.css">
+    <link rel="stylesheet" href="estiloindex2.css">
+     <!-- CON INTERNET -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery.js"></script> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+     <!-- SIN INTERNET-->
+    <script src="jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+    <script>
+        $ (document).ready(function(){
+            /*efecto para el primer boton (inicio)*/
+             $('#p1').click(function(){
+             $('#contenido').load("inicio.html"); });
+            /*efecto para el primer boton (nosotros)*/
+             $('#p2').click(function(){
+             $('#contenido').load("nosotros.html"); });
+
+             /*efecto para el primer boton (galeria)*/
+             $('#p3').click(function(){
+             $('#contenido').load("galeria.html"); });
+
+             $('#p11').click(function(){
+             $('#contenido').load("croptop.html"); });
+
+            
+             $('#p33').click(function(){
+             $('#contenido').load("polos.html"); });
+
+             $('#p44').click(function(){
+             $('#contenido').load("abrigos.html"); });
+
+             $('#p55').click(function(){
+             $('#contenido').load("buzos.html"); });
+
+             $('#p66').click(function(){
+             $('#contenido').load("jeanes.html"); });
+        });
+    </script>
+    
+</head>
+<body>
+
+    <header class=" cabeza flex modificador"><h2>MODA FEMENINA <br>
+        <img src="imagen/fonnn.png" width="150" height="100" alt=""></h2></header>
+   
+        <nav class="menu modificador">
+        <!-- icono de acordion al inicio estara oculto-->
+        <input type="checkbox" id="check"> <!---->
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars "></i>
+        </label>
+        <!------------------------------------------------->
+        <ul>
+    <li><a href="#" id="p1">inicio</a></li>
+    <li><a href="#" id="p2">nosotros</a></li>
+    <li><a href="#" id="p3">galeria</a></li>
+         </ul>
+        </nav>
+
+
+    <main class=" contenido flex modificador "> 
+        <section class=" noticias" id="contenido">
+            <article>
+                <h1> NOTICIAS</h1>
+                <tr>
+                    <td><img src="imagen/ofeee.png"width="150" height="250"alt=></td> 
+                    <td><img src="imagen/fracevestido.png" width="200" height="300" alt=""></td>
+                   <td><img src="imagen/modelo.png"width="300" height="300"alt=></td>
+                   </tr>
+             <br> <br>
+             <tr>
+                 <td></td>
+             </tr>
+                   
+            </article>
+        </section>
+        <aside class=" novedades">
+            <h2> NOVEDADES</h2>
+            <nav class="menunovedades">
+                <ul class="listamenu">
+                    
+                    <!-- ID -> ES UN IDENTIFICADOR UNICO -->
+            <li ><a href="#" id="p11">croptop</a></li>
+            <li ><a href="#" id="p33">polos</a></li>
+            <li ><a href="#" id="p44">abrigos</a></li>
+            <li ><a href="#" id="p55">buzos</a></li>
+            <li ><a href="#" id="p66">jeanes</a></li>
+                 </ul>
+            </nav>
+        </aside>
+        <footer class="pie modificador"> <h2>&copy; 2024 modaFemenida.Todos los derechos reservados</h2></footer>
+    </main>
+</body>
+</html>
